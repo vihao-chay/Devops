@@ -1,12 +1,8 @@
 name: demo
 on:
-  workflow_dispatch:
+  push:
 jobs:
   job_1:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Say hello
-        run: echo "Hello GitHub Actions!!!"
+       - run: echo "Hello GitHub Actions!!!"
